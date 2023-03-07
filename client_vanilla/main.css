@@ -1,0 +1,27 @@
+header, main {
+    width: 70vw;
+    margin: 0 auto;
+    border: none;   
+}
+
+header{
+    display: flex;
+}
+header input {
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+header button {
+    border: 1px solid black;
+    border-left: none;
+}
+
+main div.container span{
+    display: inline-block;
+    flex-grow: 1;
+}
+
+main div.container {
+    display: flex;
+}
