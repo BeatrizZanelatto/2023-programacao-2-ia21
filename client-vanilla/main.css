@@ -1,48 +1,50 @@
 * {
-    outline: none;
-    box-sizing: border-box;
+  outline: none;
+  box-sizing: border-box;
 }
 
-body {
-    background-color: #b3b3b3;
-}
-
-header, main {
-    width: 70vw;
-    margin: 0 auto;
-    border: none;
+header,
+main {
+  width: 70vw;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    padding-bottom: 1vw;
+  display: flex;
+  border: 1px solid #000000;
 }
 
 header input {
-    flex-grow: 1;
-    border: 2px solid #17c0eb;
-    height: 2vw;
-    border-radius: 1vw;
-    background-color: #8ad1e2;
-    color: #FFFFFF;
+  flex-grow: 1;
+  border: none;
+  border-right: 1px solid #000000;
 }
 
 header button {
-    border: 2px solid #8ad1e2;
-    border-radius: 1vw;
+  border: none;
 }
 
-.container {
-    display: flex;
+main div.container {
+  display: flex;
 }
 
-.span-container {
-    flex-grow: 1;
-    display: inline-block;
+main div.container span {
+  display: inline-block;
+  flex-grow: 1;
 }
 
-button:hover {
-    background-color: #b3b3b3;
-    border: 2px solid #000;
+button {
+  border: 1px solid #000000;
 }
 
+:focus {
+  background-color: #d3d3d3;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + span.realcheck {
+  color: red;
+}
